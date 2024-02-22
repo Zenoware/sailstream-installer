@@ -1,9 +1,13 @@
 {
-    "name": "laravel/installer",
-    "description": "Laravel application installer.",
-    "keywords": ["laravel"],
+    "name": "zenoware/sailstream-installer",
+    "description": "Sailstream application installer.",
+    "keywords": ["laravel", "jetstream", "sail"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Zenoware",
+            "email": "developer@zenoware.com"
+        },
         {
             "name": "Taylor Otwell",
             "email": "taylor@laravel.com"
@@ -18,20 +22,14 @@
         "symfony/process": "^6.2|^7.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.10",
-        "phpunit/phpunit": "^10.4"
+        "phpstan/phpstan": "^1.10"
     },
     "bin": [
-        "bin/laravel"
+      "bin/sailstream"
     ],
     "autoload": {
         "psr-4": {
-            "Laravel\\Installer\\Console\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Laravel\\Installer\\Console\\Tests\\": "tests/"
+            "Zenoware\\Sailstream\\Installer\\Console\\": "src/"
         }
     },
     "config": {
